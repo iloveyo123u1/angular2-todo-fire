@@ -1,0 +1,24 @@
+{
+  "name": "angular2-todo-fire",
+  "version": "1.0.0",
+  "description": "Angular2 To Do List with Firebase backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "tsc": "tsc -p src -w",
+    "start": "live-server --open=src"
+  },
+  "author": "Mohamed Isoukrane",
+  "license": "ISC",
+  "dependencies": {
+    "angular2": "^2.0.0-alpha.45",
+    "bootstrap": "^3.3.5",
+    "firebase": "^2.3.1",
+    "systemjs": "0.19.2"
+  },
+  "devDependencies": {
+    "jscs": "^2.5.1",
+    "live-server": "^0.8.2",
+    "typescript": "^1.6.2"
+  }
+}

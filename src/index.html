@@ -1,0 +1,27 @@
+<!doctype HTML>
+<html>
+  <head>
+    <title>Angular 2 To Do App with Firebase</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="app/styles/style.css"></link>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <br/>
+        <div class="col-md-6 col-md-offset-3" style="border: 1px solid black; border-radius: 3px">
+          <my-app>loading...</my-app>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
+    <script src="../node_modules/systemjs/dist/system.src.js"></script>
+    <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script>
+      System.config({
+        packages: {'app': {defaultExtension: 'js'}}
+      });
+      System.import('app/app');
+    </script>
+  </body>
+</html>

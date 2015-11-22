@@ -1,0 +1,18 @@
+<div class="text-center" [hidden]="submitted">
+  <form class="form-inline" (ng-submit)="onSubmit()" #hf="form">
+    <div class="form-group">
+      <input
+        type="text" class="form-control" required placeholder="Todo Item"
+        [(ng-model)]="model.name" ng-control="name" #name="form"
+        autofocus>
+    </div>
+    <button type="submit" class="btn btn-default hide" [disabled]="!hf.form.valid" [class.hide]="index != -1">
+       <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+       &nbsp;
+       Add Item
+    </button>
+    <button type="submit" class="btn btn-default hide" [disabled]="!hf.form.valid" [class.hide]="index == -1">
+       Save Item
+    </button>
+  </form>
+</div>
